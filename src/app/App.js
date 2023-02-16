@@ -13,17 +13,17 @@ import { ProductList } from "../components/productlist/productlist";
 export const App = () => {
 
   return (
-    <Router>
-      <Provider store={store}>
 
-        <Container fluid >
-          <Row>
-            <Navigation />
-          </Row>
+    <Provider store={store}>
 
+      <Container fluid >
+        <Row>
+          <Navigation />
+        </Row>
+        <Router>
           <Switch>
             <Row>
-              
+
               <Route exact path="/">
                 <Home />
               </Route>
@@ -34,13 +34,12 @@ export const App = () => {
 
             </Row>
           </Switch>
-          
-          <Footer />
-          
-        </Container>
+        </Router>
+        <Footer />
 
-      </Provider>
-    </Router>
+      </Container>
+
+    </Provider>
   );
 }
 

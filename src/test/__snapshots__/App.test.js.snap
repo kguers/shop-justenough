@@ -1,0 +1,448 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<App /> matches the snapshot 1`] = `
+<div
+  className="container-fluid"
+>
+  <div
+    className="row"
+  >
+    <nav
+      className="navbar fixed-top navbar navbar-expand navbar-pills"
+    >
+      <div
+        className="container-fluid"
+      >
+        <span
+          className="logo ms-4 navbar-brand"
+        >
+          <img
+            alt="Just Enough Logo"
+            className="logo-img"
+            src="./images/justenough.png"
+          />
+        </span>
+        <form
+          className="d-flex searchBar"
+        >
+          <input
+            aria-label="Search"
+            className="me-2 bar form-control"
+            placeholder="Search for Product"
+            type="search"
+          />
+          <button
+            className="btn btn-primary"
+            disabled={false}
+            type="button"
+          >
+            Search
+          </button>
+        </form>
+        <div
+          className="navbar-nav"
+          onKeyDown={[Function]}
+        >
+          <button
+            className="me-2 navRightButtons btn btn-primary"
+            disabled={false}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-right-to-bracket "
+              data-icon="right-to-bracket"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 512 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M217.9 105.9L340.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L217.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1L32 320c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM352 416l64 0c17.7 0 32-14.3 32-32l0-256c0-17.7-14.3-32-32-32l-64 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l64 0c53 0 96 43 96 96l0 256c0 53-43 96-96 96l-64 0c-17.7 0-32-14.3-32-32s14.3-32 32-32z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </button>
+          <button
+            className="me-2 navRightButtons btn btn-primary"
+            disabled={false}
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-cart-shopping "
+              data-icon="cart-shopping"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 576 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div
+    className="row"
+    computedMatch={
+      Object {
+        "isExact": true,
+        "params": Object {},
+        "path": "/",
+        "url": "/",
+      }
+    }
+    location={
+      Object {
+        "hash": "",
+        "pathname": "/",
+        "search": "",
+        "state": undefined,
+      }
+    }
+  >
+    <div
+      className="home accountForNav container"
+    >
+      <div
+        className="justify-content-center hero row"
+      >
+        <div
+          align="center"
+          className=" hero-left col-4"
+        >
+          <h4
+            className="tagline"
+          >
+            Podcast merch for you
+          </h4>
+        </div>
+        <div
+          align="center"
+          className="col-6 offset-1"
+        >
+          <div
+            className="carousel slide"
+            onKeyDown={[Function]}
+            onMouseOut={[Function]}
+            onMouseOver={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+          >
+            <div
+              className="carousel-indicators"
+            >
+              <button
+                aria-current={true}
+                aria-label="Slide 1"
+                className="active"
+                data-bs-target=""
+                onClick={[Function]}
+                type="button"
+              />
+              <button
+                aria-current={false}
+                aria-label="Slide 2"
+                data-bs-target=""
+                onClick={[Function]}
+                type="button"
+              />
+              <button
+                aria-current={false}
+                aria-label="Slide 3"
+                data-bs-target=""
+                onClick={[Function]}
+                type="button"
+              />
+            </div>
+            <div
+              className="carousel-inner"
+            >
+              <div
+                className="active carousel-item"
+              >
+                <img
+                  alt="First slide"
+                  className="carousel-img d-block w-100 rounded"
+                  src="./images/podcast-mic.jpg"
+                />
+                <div
+                  className="carousel-caption"
+                >
+                  <button
+                    className="btn-high btn btn-primary"
+                    disabled={false}
+                    type="button"
+                  >
+                    <h4>
+                      Microphones
+                    </h4>
+                  </button>
+                </div>
+              </div>
+              <div
+                className="carousel-item"
+              >
+                <img
+                  alt="Second slide"
+                  className="carousel-img d-block w-100 rounded"
+                  src="./images/podcast-headphones.jpg"
+                />
+                <div
+                  className="carousel-caption"
+                >
+                  <button
+                    className="btn-high btn btn-primary"
+                    disabled={false}
+                    type="button"
+                  >
+                    <h3>
+                      Headphones
+                    </h3>
+                  </button>
+                </div>
+              </div>
+              <div
+                className="carousel-item"
+              >
+                <img
+                  alt="Third slide"
+                  className="carousel-img d-block w-100 rounded"
+                  src="./images/podcast-switch.jpg"
+                />
+                <div
+                  className="carousel-caption"
+                >
+                  <button
+                    className="btn-high btn btn-primary"
+                    disabled={false}
+                    type="button"
+                  >
+                    <h3>
+                      Audio Switches
+                    </h3>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <a
+              className="carousel-control-prev"
+              href="#"
+              onClick={[Function]}
+              onKeyDown={[Function]}
+              role="button"
+              tabIndex={0}
+            >
+              <span
+                aria-hidden="true"
+                className="carousel-control-prev-icon"
+              />
+              <span
+                className="visually-hidden"
+              >
+                Previous
+              </span>
+            </a>
+            <a
+              className="carousel-control-next"
+              href="#"
+              onClick={[Function]}
+              onKeyDown={[Function]}
+              role="button"
+              tabIndex={0}
+            >
+              <span
+                aria-hidden="true"
+                className="carousel-control-next-icon"
+              />
+              <span
+                className="visually-hidden"
+              >
+                Next
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <h3
+        className="pop-title"
+      >
+        Most Popular
+      </h3>
+      <div
+        className="row"
+      >
+        <div
+          className="col-12 col-md-6 col-xl-3 col"
+        >
+          <div
+            className="prod m-xs-4  card"
+          >
+            <a
+              className="card-link"
+              href="#"
+            >
+              <img
+                alt="Skullcandy Hesh ANC"
+                className="card-img-top prod-img img-fluid"
+                src="./images/products/skullcandies.jpg"
+              />
+            </a>
+            <div
+              className="prod-bod card-body"
+            >
+              <div
+                className="card-title h5"
+              >
+                Skullcandy Hesh ANC
+              </div>
+              <p
+                className="description card-text"
+              >
+                Over-Ear Headphones, Active Noise Cancelling, Wireless Charging 22 Hours Battery Life - True Black
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          className="col-12 col-md-6 col-xl-3 col"
+        >
+          <div
+            className="prod m-xs-4  card"
+          >
+            <a
+              className="card-link"
+              href="#"
+            >
+              <img
+                alt="Fifine USB Microphone"
+                className="card-img-top prod-img img-fluid"
+                src="./images/products/Fifine-USB-Mic.jpg"
+              />
+            </a>
+            <div
+              className="prod-bod card-body"
+            >
+              <div
+                className="card-title h5"
+              >
+                Fifine USB Microphone
+              </div>
+              <p
+                className="description card-text"
+              >
+                FIFINE USB Studio Recording Microphone Computer Podcast Mic for PC, PS4, Mac with Mute Button & Monitor Headphone Jack, Four Pickup Patterns for Vocals YouTube Streaming Gaming ASMR Zoom-Class (K690)
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          className="col-12 col-md-6 col-xl-3 col"
+        >
+          <div
+            className="prod m-xs-4  card"
+          >
+            <a
+              className="card-link"
+              href="#"
+            >
+              <img
+                alt="Tenealay 3-in-1 Switch"
+                className="card-img-top prod-img img-fluid"
+                src="./images/products/tenealay-3switch.jpg"
+              />
+            </a>
+            <div
+              className="prod-bod card-body"
+            >
+              <div
+                className="card-title h5"
+              >
+                Tenealay 3-in-1 Switch
+              </div>
+              <p
+                className="description card-text"
+              >
+                3.5mm Audio Switch with line Volume Controller, 3 in 1 Out 1/8" aux switcher Splitter selector Box, Mini Inline Headphone attenuator Volume Control knob -MC31
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          className="col-12 col-md-6 col-xl-3 col"
+        >
+          <div
+            className="prod m-xs-4  card"
+          >
+            <a
+              className="card-link"
+              href="#"
+            >
+              <img
+                alt="Blue Snowball"
+                className="card-img-top prod-img img-fluid"
+                src="./images/products/blue-mic.jpg"
+              />
+            </a>
+            <div
+              className="prod-bod card-body"
+            >
+              <div
+                className="card-title h5"
+              >
+                Blue Snowball
+              </div>
+              <p
+                className="description card-text"
+              >
+                Blue Snowball iCE USB Microphone for PC, Mac, Gaming, Recording, Streaming, Podcasting, with Cardioid Condenser Mic Capsule, Adjustable Desktop Stand and USB cable, Plug 'n Play – Black
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="footer accountForNav row"
+  >
+    <div
+      className="text-start align-self-center col"
+    >
+      <img
+        alt="Logo without wording"
+        className="d-inline logo-footer"
+        src="./images/justenough-logo.png"
+      />
+      <p
+        className="d-inline p-2 text-nowrap"
+      >
+        © Just Enough Podcast, LLC 2023 
+      </p>
+    </div>
+    <div
+      className="align-self-center text-end col-3 col"
+    >
+      <a
+        href="https://github.com/kguers/shop.justenough.github.io"
+        rel="noopener noreferrer"
+        target="_blank"
+      />
+    </div>
+  </div>
+</div>
+`;
