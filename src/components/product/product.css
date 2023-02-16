@@ -1,0 +1,25 @@
+.prod {
+    margin: 3rem 2rem;
+    padding: 2rem .5rem;
+    height: 30rem;
+    border: .15rem solid black;
+}
+
+.prod-img {
+    object-fit: scale-down;
+    min-height: 12rem;
+    max-height: 15rem;
+    min-width: 40%;
+    max-width: 100%;
+    padding-bottom: 1rem;
+    border-bottom: .1rem solid black;
+}
+
+.prod-bod {
+    overflow-y:auto;
+}
+
+.description {
+    font-family: 'Roboto Mono', monospace;
+    font-size: .8rem
+}

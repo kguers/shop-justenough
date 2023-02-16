@@ -1,0 +1,13 @@
+.footer {
+    padding: 1rem 1.5rem;
+    background-color: #c7c7c7;
+    border: .1rem solid black;
+}
+
+.logo-footer {
+    width: 5rem;
+}
+
+.github {
+    font-size: 2rem;
+}

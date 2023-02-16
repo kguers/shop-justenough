@@ -9,20 +9,20 @@ export const Navigation = () => {
     const [sign, setSign] = useState(false)
 
     return (
-        <Navbar variant="pills" className="navbar">
+        <Navbar variant="pills" className="navbar fixed-top">
             <Container fluid>
                 <Navbar.Brand className="logo ms-4">
                     <img
                         className='logo-img'
-                        src='./justenough.png'
+                        src='./images/justenough.png'
                         alt='Just Enough Logo'
                     />
                 </Navbar.Brand>
-                <Form className="d-flex">
+                <Form className="d-flex searchBar">
                     <Form.Control
                         type="search"
-                        placeholder="Search"
-                        className="me-2"
+                        placeholder="Search for Product"
+                        className="me-2 bar"
                         aria-label="Search"
                     />
                     <Button variant="primary">Search</Button>

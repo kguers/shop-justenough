@@ -1,8 +1,8 @@
 .navbar {
     background-color: #c7c7c7;
+    border: .1rem solid black;
     height: 5rem;
-}
-
+} 
 .logo {
     width: 15rem;
     height: 5rem;
@@ -10,6 +10,13 @@
 
 .logo-img {
     height: 4.2rem;
+}
+.searchBar {
+    margin: 0 auto !important;
+}
+
+.bar {
+    border: .05rem outset black;
 }
 
 .navRightButtons {

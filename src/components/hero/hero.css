@@ -1,0 +1,23 @@
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../../public/images/podcast-hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 5%;
+    padding-bottom: 10%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    width: 95%;
+    opacity: .6;
+  }
+  .tagline {
+    font-family: Lobster, cursive;
+    font-size: 2.5rem;
+  }
+
+  .hero-left > h4 {
+    color: white;
+    border-radius: 10rem;
+    text-shadow: .2rem .2rem .15rem black;
+    padding-top: 40%;
+  }

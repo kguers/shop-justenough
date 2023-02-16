@@ -1,0 +1,23 @@
+body {
+    box-sizing:border-box;
+    width: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
+    background-color: #656565 !important;
+    font-family: 'Oswald' !important;
+}
+
+.accountForNav {
+    position: relative;
+    top: 5rem;
+}
+
+/* CUSTOM COLORS */
+
+.btn-primary {
+    background-color: #3385d9 !important;
+}
+
+.footer-link {
+    color: #3385d9;
+}
