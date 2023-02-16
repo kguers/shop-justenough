@@ -18,7 +18,7 @@ export const Hero = () => {
                             alt="First slide"
                         />
                         <Carousel.Caption>
-                            <Button><h4>Microphones</h4></Button>
+                            <Button className="btn-high"><h4>Microphones</h4></Button>
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
@@ -28,7 +28,7 @@ export const Hero = () => {
                             alt="Second slide"
                         />
                         <Carousel.Caption>
-                            <Button><h3>Headphones</h3></Button>
+                            <Button className="btn-high"><h3>Headphones</h3></Button>
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
@@ -38,7 +38,7 @@ export const Hero = () => {
                             alt="Third slide"
                         />
                         <Carousel.Caption>
-                            <Button><h3>Audio Switches</h3></Button>
+                            <Button className="btn-high"><h3>Audio Switches</h3></Button>
                         </Carousel.Caption>
                     </Carousel.Item>
                 </Carousel>

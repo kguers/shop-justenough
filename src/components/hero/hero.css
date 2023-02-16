@@ -1,5 +1,6 @@
 .hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../../public/images/podcast-hero.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .7)), url("../../../public/images/podcast-hero.jpg");
+    z-index: 5;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -20,4 +21,8 @@
     border-radius: 10rem;
     text-shadow: .2rem .2rem .15rem black;
     padding-top: 40%;
+  }
+
+  .btn-high {
+    z-index: 1100;
   }
