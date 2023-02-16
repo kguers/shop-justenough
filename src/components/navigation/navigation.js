@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Container, Navbar, Nav, Form, Button } from "react-bootstrap";
+import { Container, Navbar, Nav, Form, Button, Row } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faRightToBracket, faPersonRunning, faCartShopping } from '@fortawesome/free-solid-svg-icons';
 import './navigation.css'
@@ -18,7 +18,7 @@ export const Navigation = () => {
                         alt='Just Enough Logo'
                     />
                 </Navbar.Brand>
-                <Form className="d-flex searchBar">
+                <Form className="d-none d-sm-flex searchBar">
                     <Form.Control
                         type="search"
                         placeholder="Search for Product"
@@ -28,7 +28,7 @@ export const Navigation = () => {
                     <Button variant="primary">Search</Button>
                 </Form>
                 <Nav>
-                    <Button 
+                    <Button
                         onMouseEnter={() => setSign(true)}
                         onMouseLeave={() => setSign(false)}
                         className="me-2 navRightButtons"
@@ -44,15 +44,15 @@ export const Navigation = () => {
                             />
                         }
                     </Button>
-                    <Button 
+                    <Button
                         className="me-2 navRightButtons"
                     >
-                        <FontAwesomeIcon 
+                        <FontAwesomeIcon
                             icon={faCartShopping}
                         />
                     </Button>
                 </Nav>
             </Container>
-        </Navbar>
+        </Navbar >
     );
 }

@@ -27,3 +27,25 @@ body {
 .footer-link {
     color: #3385d9;
 }
+
+/* MOBILE */
+
+@media (max-width: 767.98px) {
+    .hero {
+        background-color: rgba(0,0,0,0);
+    }
+
+ }
+
+ @media (max-width: 575.98px) {
+    .accountForNav {
+        position: relative;
+        top: 8rem;
+    }
+
+    .hero-carousel {
+        position: relative;
+        top: 0rem;
+    }
+
+}

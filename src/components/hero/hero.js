@@ -5,12 +5,12 @@ export const Hero = () => {
 
     return (
         <Row className="justify-content-center hero">
-            <Col align="center" xs={{ span: 4 }} className=" hero-left">
-                <h4 className="tagline">Podcast merch for you</h4>
+            <Col align="center " xs={{ span: 4 }} className="d-none d-md-flex hero-left">
+                <h4 className="tagline justify-content-center">Podcast merch for you</h4>
             </Col>
 
-            <Col align="center" xs={{ span: 6, offset: 1 }}>
-                <Carousel>
+            <Col align="center" xs={{ span: 12 }} sm={{span: 8}} md={{span: 6}}>
+                <Carousel className="hero-carousel">
                     <Carousel.Item>
                         <img
                             className="carousel-img d-block w-100 rounded"
@@ -18,7 +18,7 @@ export const Hero = () => {
                             alt="First slide"
                         />
                         <Carousel.Caption>
-                            <Button className="btn-high"><h4>Microphones</h4></Button>
+                            <Button className="btn-carousel"><h4>Microphones</h4></Button>
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
@@ -28,7 +28,7 @@ export const Hero = () => {
                             alt="Second slide"
                         />
                         <Carousel.Caption>
-                            <Button className="btn-high"><h3>Headphones</h3></Button>
+                            <Button className="btn-carousel"><h3>Headphones</h3></Button>
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
@@ -38,7 +38,7 @@ export const Hero = () => {
                             alt="Third slide"
                         />
                         <Carousel.Caption>
-                            <Button className="btn-high"><h3>Audio Switches</h3></Button>
+                            <Button className="btn-carousel"><h3>Audio Switches</h3></Button>
                         </Carousel.Caption>
                     </Carousel.Item>
                 </Carousel>

@@ -9,6 +9,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { Home } from "../components/home/home";
 import { Footer } from "../components/footer/footer";
 import { ProductList } from "../components/productlist/productlist";
+import { MobileSearch } from "../components/navigation/mobileSearch";
 
 export const App = () => {
 
@@ -20,6 +21,11 @@ export const App = () => {
         <Row>
           <Navigation />
         </Row>
+
+        <Row>
+          <MobileSearch />
+        </Row>
+
         <Router>
           <Switch>
             <Row>
