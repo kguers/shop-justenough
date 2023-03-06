@@ -9,7 +9,7 @@ export const Home = () => {
         <Container className="home accountForNav">
             <Hero />
             <h3 className="pop-title">Most Popular</h3>
-            <ProductList productAmount={4}/>
+            <ProductList productAmount={4} filter={"topRated"}/>
         </Container>
     );
 }

@@ -10,7 +10,7 @@ export const Product = ({ prod }) => {
         <Col className="col-12 col-md-6 col-xl-3">
             <Card className="prod m-xs-4 ">
                 <Card.Link href="#">
-                    <Card.Img className="prod-img img-fluid" variant="top" src={product.image} alt={product.title} />
+                    <Card.Img className="prod-img img-fluid" variant="top" src={`data:image/jpg;base64,${product.image}`} alt={product.title} />
                 </Card.Link>
                 <Card.Body className="prod-bod">
                     <Card.Title>{prod.title}</Card.Title>

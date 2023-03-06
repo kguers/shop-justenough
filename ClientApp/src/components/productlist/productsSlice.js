@@ -1,10 +1,22 @@
-import { createSlice } from "@reduxjs/toolkit";
-import products from "../../app/data";
+import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
+import { baseurl } from "../../app/data";
+import axios from "axios";
+
+const controller = "api/Product/";
+
+export const loadProducts = createAsyncThunk('products/loadProducts',
+    async () => {
+        const response = await axios.get(baseurl + controller);
+        let data = await response.data;
+        return data; 
+});
 
 export const productSlice = createSlice({
     name: "products",
     initialState: {
-        products: products,
+        products: [],
+        isLoading: false,
+        hasError: false,
     },
     reducers: {
         getCategory: (state, action) => {
@@ -15,10 +27,25 @@ export const productSlice = createSlice({
             const { brand } = action.payload;
             return state.products.filter(prod => prod.brand === brand);
         },
+    },
+    extraReducers: {
+        [loadProducts.pending]: (state, action) => {
+            state.isLoading = true;
+            state.hasError = false;
+        },
+        [loadProducts.fulfilled]: (state, action) => {
+            state.isLoading = false;
+            state.hasError = false;
+            state.products = action.payload;
+        },
+        [loadProducts.rejected]: (state, action) => {
+            state.isLoading = false;
+            state.hasError = true;
+        },
     }
 });
 
 export const { getCategory, getBrand } = productSlice.actions;
-export const topRated = (state) => [...state.products.products].sort((a,b) => b.rating - a.rating);
-export const selectProducts = (state) => state.products;
+export const selectLoading = (state) => state.isLoading;
+export const selectError = (state) => state.hasError;
 export default productSlice.reducer;

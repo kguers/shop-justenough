@@ -1,5 +1,5 @@
 import React from "react";
-import store from './store';
+import store from "./store";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
