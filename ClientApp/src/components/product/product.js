@@ -4,7 +4,7 @@ import { Card, Col } from "react-bootstrap";
 
 export const Product = ({ prod }) => {
 
-    const [product, setProduct] = useState(prod);
+    const [product] = useState(prod);
 
     return (
         <Col className="col-12 col-md-6 col-xl-3">
