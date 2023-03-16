@@ -7,7 +7,6 @@ orbs:
 jobs:
   build-test-react:
     executor: node/default
-    working_directory: ./ClientApp
     docker:
       - image: cimg/node:19.7.0
     steps:
