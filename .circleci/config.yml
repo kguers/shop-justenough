@@ -7,13 +7,10 @@ orbs:
 jobs:
   build-test-react:
     executor: node/default
-    working_directory: ./ClientApp
+    working_directory: ~/ClientApp
     docker:
       - image: cimg/node:19.7.0
     steps:
-      - add_ssh_keys:
-          fingerprints:
-            - "${FINGERPRINT}"
       - checkout:
           require_ssh_keys: true
       - node/install-packages:
@@ -21,29 +18,29 @@ jobs:
       - run:
           name: Test
           command:  npm run test
-          working_directory: ./ClientApp
+          working_directory: ~/ClientApp
       - run:
           name: Build Frontend
           command: npm run build
-          working_directory: ./ClientApp
+          working_directory: ~/ClientApp
   build-test-dotnet:
     docker:
       - image: mcr.microsoft.com/dotnet/sdk:6.0
-    working_directory: ./WebApi
+    working_directory: ~/WebApi
     steps:
       - checkout
       - run:
           name: Restore packages
           command: dotnet restore
-          working_directory: ./WebApi
+          working_directory: ~/WebApi
       - run:
           name: Build project
           command: dotnet build
-          working_directory: ./WebApi
+          working_directory: ~/WebApi
       - run:
           name: Run tests
           command: dotnet test
-          working_directory: ./WebApi.Test
+          working_directory: ~/WebApi.Test
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
