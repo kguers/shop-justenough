@@ -9,7 +9,7 @@ jobs:
     executor: node/default
     working_directory: ./ClientApp
     docker:
-      - image: circleci/node16.13.1
+      - image: circleci/node19.7.0
     steps:
       - checkout
       - node/install-packages:
