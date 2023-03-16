@@ -12,7 +12,7 @@ jobs:
       - image: cimg/node:19.7.0
     steps:
       - checkout:
-          path: ./ClientApp
+          path: ~/ClientApp
           require_ssh_keys: true
       - run:
           name: Install packages
