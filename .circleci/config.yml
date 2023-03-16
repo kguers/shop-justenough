@@ -14,9 +14,9 @@ jobs:
       - checkout:
           path: ~/ClientApp
           require_ssh_keys: true
-      - node/install-packages:
-          path: ~/ClientApp
-          pkg-manager: npm
+      - run:
+          name: Install packages
+          command: cd ClientApp && npm install
       - run:
           name: Test
           command:  npm run test
