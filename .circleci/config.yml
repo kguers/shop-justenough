@@ -7,7 +7,7 @@ orbs:
 jobs:
   build-test-react:
     executor: node/default
-    working_directory: ~/ClientApp
+    app-dir: ~/ClientApp
     docker:
       - image: cimg/node:19.7.0
     steps:
@@ -26,7 +26,7 @@ jobs:
   build-test-dotnet:
     docker:
       - image: mcr.microsoft.com/dotnet/sdk:6.0
-    working_directory: ~/WebApi
+    app-dir: ~/WebApi
     steps:
       - checkout
       - run:
