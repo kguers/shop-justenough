@@ -16,6 +16,7 @@ jobs:
           require_ssh_keys: true
       - run:
           name: Install packages
+          working_directory: ~/ClientApp
           command: npm install
       - run:
           name: Test
