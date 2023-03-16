@@ -2,7 +2,7 @@ version: 2.1
 
 jobs:
   build-test-react:
-    working_directory: ~/app/ClientApp
+    working_directory: ~/app/
     docker:
       - image: cimg/node:19.7.0
     steps:
@@ -10,13 +10,13 @@ jobs:
           require_ssh_keys: true
       - run:
           name: Install packages
-          command: ls && npm install
+          command: cd ./ClientApp && npm install
       - run:
           name: Test
-          command:  npm run test
+          command:  cd ./ClientApp && npm run test
       - run:
           name: Build Frontend
-          command: npm run build
+          command: cd ./ClientApp && npm run build
   build-test-dotnet:
     docker:
       - image: mcr.microsoft.com/dotnet/sdk:6.0
