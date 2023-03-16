@@ -11,8 +11,11 @@ jobs:
     docker:
       - image: cimg/node:19.7.0
     steps:
+      - add_ssh_keys:
+          fingerprints:
+            - "${FINGERPRINT}"
       - checkout:
-          persist_to_workspace: { root: ./ClientApp }
+          require_ssh_keys: true
       - node/install-packages:
           pkg-manager: npm
       - run:
