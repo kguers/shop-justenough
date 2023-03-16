@@ -26,7 +26,7 @@ jobs:
   build-test-dotnet:
     docker:
       - image: mcr.microsoft.com/dotnet/sdk:6.0
-    app-dir: ~/WebApi
+    working_directory: ~/WebApi
     steps:
       - checkout
       - run:
