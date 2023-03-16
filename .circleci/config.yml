@@ -11,6 +11,7 @@ jobs:
       - image: cimg/node:19.7.0
     steps:
       - checkout
+      - working_directory: ./ClientApp
       - node/install-packages:
           pkg-manager: npm
       - run:
