@@ -15,6 +15,7 @@ jobs:
           path: ~/ClientApp
           require_ssh_keys: true
       - node/install-packages:
+          path: ~/ClientApp
           pkg-manager: npm
       - run:
           name: Test
