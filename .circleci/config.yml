@@ -11,7 +11,8 @@ jobs:
     docker:
       - image: cimg/node:19.7.0
     steps:
-      - checkout
+      - checkout:
+          persist_to_workspace: { root: ./ClientApp }
       - node/install-packages:
           pkg-manager: npm
       - run:
