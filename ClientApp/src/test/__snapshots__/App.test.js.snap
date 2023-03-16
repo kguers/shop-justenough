@@ -23,7 +23,7 @@ exports[`<App /> matches the snapshot 1`] = `
           />
         </span>
         <form
-          className="d-flex searchBar"
+          className="d-none d-sm-flex searchBar"
         >
           <input
             aria-label="Search"
@@ -55,6 +55,7 @@ exports[`<App /> matches the snapshot 1`] = `
               className="svg-inline--fa fa-right-to-bracket "
               data-icon="right-to-bracket"
               data-prefix="fas"
+              data-test="rightToBracket"
               focusable="false"
               role="img"
               style={Object {}}
@@ -97,6 +98,27 @@ exports[`<App /> matches the snapshot 1`] = `
   </div>
   <div
     className="row"
+  >
+    <form
+      className="d-flex d-sm-none mobileSearch"
+    >
+      <input
+        aria-label="Search"
+        className="me-2 bar form-control"
+        placeholder="Search for Product"
+        type="search"
+      />
+      <button
+        className="btn btn-primary"
+        disabled={false}
+        type="button"
+      >
+        Search
+      </button>
+    </form>
+  </div>
+  <div
+    className="row"
     computedMatch={
       Object {
         "isExact": true,
@@ -121,21 +143,21 @@ exports[`<App /> matches the snapshot 1`] = `
         className="justify-content-center hero row"
       >
         <div
-          align="center"
-          className=" hero-left col-4"
+          align="center "
+          className="d-none d-md-flex hero-left col-4"
         >
           <h4
-            className="tagline"
+            className="tagline justify-content-center"
           >
             Podcast merch for you
           </h4>
         </div>
         <div
           align="center"
-          className="col-6 offset-1"
+          className="col-md-6 col-sm-8 col-12"
         >
           <div
-            className="carousel slide"
+            className="hero-carousel carousel slide"
             onKeyDown={[Function]}
             onMouseOut={[Function]}
             onMouseOver={[Function]}
@@ -184,7 +206,7 @@ exports[`<App /> matches the snapshot 1`] = `
                   className="carousel-caption"
                 >
                   <button
-                    className="btn-high btn btn-primary"
+                    className="btn-carousel btn btn-primary"
                     disabled={false}
                     type="button"
                   >
@@ -206,7 +228,7 @@ exports[`<App /> matches the snapshot 1`] = `
                   className="carousel-caption"
                 >
                   <button
-                    className="btn-high btn btn-primary"
+                    className="btn-carousel btn btn-primary"
                     disabled={false}
                     type="button"
                   >
@@ -228,7 +250,7 @@ exports[`<App /> matches the snapshot 1`] = `
                   className="carousel-caption"
                 >
                   <button
-                    className="btn-high btn btn-primary"
+                    className="btn-carousel btn btn-primary"
                     disabled={false}
                     type="button"
                   >
@@ -285,136 +307,7 @@ exports[`<App /> matches the snapshot 1`] = `
       </h3>
       <div
         className="row"
-      >
-        <div
-          className="col-12 col-md-6 col-xl-3 col"
-        >
-          <div
-            className="prod m-xs-4  card"
-          >
-            <a
-              className="card-link"
-              href="#"
-            >
-              <img
-                alt="Skullcandy Hesh ANC"
-                className="card-img-top prod-img img-fluid"
-                src="./images/products/skullcandies.jpg"
-              />
-            </a>
-            <div
-              className="prod-bod card-body"
-            >
-              <div
-                className="card-title h5"
-              >
-                Skullcandy Hesh ANC
-              </div>
-              <p
-                className="description card-text"
-              >
-                Over-Ear Headphones, Active Noise Cancelling, Wireless Charging 22 Hours Battery Life - True Black
-              </p>
-            </div>
-          </div>
-        </div>
-        <div
-          className="col-12 col-md-6 col-xl-3 col"
-        >
-          <div
-            className="prod m-xs-4  card"
-          >
-            <a
-              className="card-link"
-              href="#"
-            >
-              <img
-                alt="Fifine USB Microphone"
-                className="card-img-top prod-img img-fluid"
-                src="./images/products/Fifine-USB-Mic.jpg"
-              />
-            </a>
-            <div
-              className="prod-bod card-body"
-            >
-              <div
-                className="card-title h5"
-              >
-                Fifine USB Microphone
-              </div>
-              <p
-                className="description card-text"
-              >
-                FIFINE USB Studio Recording Microphone Computer Podcast Mic for PC, PS4, Mac with Mute Button & Monitor Headphone Jack, Four Pickup Patterns for Vocals YouTube Streaming Gaming ASMR Zoom-Class (K690)
-              </p>
-            </div>
-          </div>
-        </div>
-        <div
-          className="col-12 col-md-6 col-xl-3 col"
-        >
-          <div
-            className="prod m-xs-4  card"
-          >
-            <a
-              className="card-link"
-              href="#"
-            >
-              <img
-                alt="Tenealay 3-in-1 Switch"
-                className="card-img-top prod-img img-fluid"
-                src="./images/products/tenealay-3switch.jpg"
-              />
-            </a>
-            <div
-              className="prod-bod card-body"
-            >
-              <div
-                className="card-title h5"
-              >
-                Tenealay 3-in-1 Switch
-              </div>
-              <p
-                className="description card-text"
-              >
-                3.5mm Audio Switch with line Volume Controller, 3 in 1 Out 1/8" aux switcher Splitter selector Box, Mini Inline Headphone attenuator Volume Control knob -MC31
-              </p>
-            </div>
-          </div>
-        </div>
-        <div
-          className="col-12 col-md-6 col-xl-3 col"
-        >
-          <div
-            className="prod m-xs-4  card"
-          >
-            <a
-              className="card-link"
-              href="#"
-            >
-              <img
-                alt="Blue Snowball"
-                className="card-img-top prod-img img-fluid"
-                src="./images/products/blue-mic.jpg"
-              />
-            </a>
-            <div
-              className="prod-bod card-body"
-            >
-              <div
-                className="card-title h5"
-              >
-                Blue Snowball
-              </div>
-              <p
-                className="description card-text"
-              >
-                Blue Snowball iCE USB Microphone for PC, Mac, Gaming, Recording, Streaming, Podcasting, with Cardioid Condenser Mic Capsule, Adjustable Desktop Stand and USB cable, Plug 'n Play – Black
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+      />
     </div>
   </div>
   <div
@@ -425,11 +318,11 @@ exports[`<App /> matches the snapshot 1`] = `
     >
       <img
         alt="Logo without wording"
-        className="d-inline logo-footer"
+        className="d-none d-sm-inline logo-footer"
         src="./images/justenough-logo.png"
       />
       <p
-        className="d-inline p-2 text-nowrap"
+        className=" d-inline p-2 text-nowrap"
       >
         © Just Enough Podcast, LLC 2023 
       </p>

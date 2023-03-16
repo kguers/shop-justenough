@@ -37,10 +37,12 @@ export const Navigation = () => {
                             ?
                             <FontAwesomeIcon
                                 icon={faRightToBracket}
+                                data-test={"rightToBracket"}
                             />
                             :
                             <FontAwesomeIcon
                                 icon={faPersonRunning}
+                                data-test={"personRunning"}
                             />
                         }
                     </Button>
