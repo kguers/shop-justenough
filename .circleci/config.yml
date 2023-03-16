@@ -1,18 +1,12 @@
 version: 2.1
 
-orbs:
-  node: circleci/node@5.1.0
-  
-
 jobs:
   build-test-react:
-    executor: node/default
-    working_directory: ./ClientApp
+    working_directory: ~/app/ClientApp
     docker:
       - image: cimg/node:19.7.0
     steps:
       - checkout:
-          path: ~/ClientApp
           require_ssh_keys: true
       - run:
           name: Install packages
@@ -26,7 +20,7 @@ jobs:
   build-test-dotnet:
     docker:
       - image: mcr.microsoft.com/dotnet/sdk:6.0
-    working_directory: ./WebApi
+    working_directory: ~/app
     steps:
       - checkout
       - run:
@@ -42,8 +36,6 @@ jobs:
           command: dotnet test
           working_directory: ./WebApi.Test
 
-# Invoke jobs via workflows
-# See: https://circleci.com/docs/2.0/configuration-reference/#workflows
 workflows:
   stack:
     jobs:
