@@ -16,7 +16,7 @@ jobs:
           require_ssh_keys: true
       - run:
           name: Install packages
-          command: cd ClientApp && npm install
+          command: npm install
       - run:
           name: Test
           command:  npm run test
@@ -28,21 +28,21 @@ jobs:
   build-test-dotnet:
     docker:
       - image: mcr.microsoft.com/dotnet/sdk:6.0
-    working_directory: ~/WebApi
+    working_directory: ./WebApi
     steps:
       - checkout
       - run:
           name: Restore packages
           command: dotnet restore
-          working_directory: ~/WebApi
+          working_directory: ./WebApi
       - run:
           name: Build project
           command: dotnet build
-          working_directory: ~/WebApi
+          working_directory: ./WebApi
       - run:
           name: Run tests
           command: dotnet test
-          working_directory: ~/WebApi.Test
+          working_directory: ./WebApi.Test
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
