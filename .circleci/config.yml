@@ -16,16 +16,13 @@ jobs:
           require_ssh_keys: true
       - run:
           name: Install packages
-          working_directory: ./ClientApp
           command: npm install
       - run:
           name: Test
           command:  npm run test
-          working_directory: ./ClientApp
       - run:
           name: Build Frontend
           command: npm run build
-          working_directory: ./ClientApp
   build-test-dotnet:
     docker:
       - image: mcr.microsoft.com/dotnet/sdk:6.0
